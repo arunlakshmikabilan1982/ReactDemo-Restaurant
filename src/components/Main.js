@@ -1,6 +1,7 @@
 import { Heading } from "./Heading";
 import { Underline } from "./Underline";
 import { Whyus } from "./Whyus";
+import { About } from "./About";
 
 import "./components.css";
 
@@ -25,6 +26,7 @@ const data = [
 export function Main() {
   return (
     <div className="MainBox">
+      <About />
       <Heading title="Menu" description="Check Out Tasty Menu" />
       <Whyus support={data} />
       <Underline />
