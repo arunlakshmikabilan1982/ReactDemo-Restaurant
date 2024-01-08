@@ -26,7 +26,7 @@ const data = [
 export function Main() {
   return (
     <div className="MainBox">
-      <About />
+      {/* <About /> */}
       <Heading title="Menu" description="Check Out Tasty Menu" />
       <Whyus support={data} />
       <Underline />

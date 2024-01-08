@@ -4,15 +4,18 @@
   background-color: rgba(0, 0, 0, 0.877);
 }
 
+.ScollerBg {
+}
+
 .headingTitle {
   color: rgb(211, 193, 193);
-  font-size: large;
+  font-size: 25px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .headingDescription {
-  color: rgb(235, 216, 112);
+  color: #bf883b;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -121,6 +124,7 @@
 
 .ScollerBg {
   min-height: 100vh;
+  background-image: url("");
   color: white;
   background-size: cover;
   background-position: center;
@@ -337,3 +341,37 @@ input[type="submit"] {
   width: 20px;
   height: 20px;
 } */
+
+.Item {
+  width: 170px;
+  height: 50px;
+  padding: 3px auto;
+  text-align: start;
+  margin-left: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 200;
+  font-size: large;
+  border-right: 2px solid #bf883b;
+}
+
+.Item:hover {
+  color: #bf883b;
+}
+
+.ItemOpen {
+  width: 170px;
+  height: 50px;
+  padding: 3px auto;
+  text-align: start;
+  margin-left: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 200;
+  font-size: large;
+  background-color: #bf883b;
+  color: white;
+}
+
+.MainSpecials {
+  display: flex;
+  margin-top: 30px;
+}
