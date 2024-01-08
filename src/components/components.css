@@ -4,9 +4,6 @@
   background-color: rgba(0, 0, 0, 0.877);
 }
 
-.ScollerBg {
-}
-
 .headingTitle {
   color: rgb(211, 193, 193);
   font-size: large;
@@ -124,7 +121,6 @@
 
 .ScollerBg {
   min-height: 100vh;
-  background-image: url("");
   color: white;
   background-size: cover;
   background-position: center;
