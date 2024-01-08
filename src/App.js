@@ -52,6 +52,7 @@ function App() {
   return (
     <div className="App">
       <NavBar title="Resturant" items={NavBarItems} />
+
       <Menu />
       <Main />
       {/* <div className="ScollerBg">
