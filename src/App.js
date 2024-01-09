@@ -7,6 +7,7 @@ import { ContactUs } from "./components/ContactUs";
 import Specials from "./components/Specials";
 import NavBar from "./components/NavBar";
 import { Whyus } from "./components/Whyus";
+import Gallery from "./components/Gallery";
 
 const NavBarItems = [
   {
@@ -48,6 +49,17 @@ const NavBarItems = [
   },
 ];
 
+const images = [
+  "https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-1.jpg",
+  "https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-2.jpg",
+  "https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-3.jpg",
+  "https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-4.jpg",
+  "https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-5.jpg",
+  "https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-6.jpg",
+  "https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-7.jpg",
+  "https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-8.jpg",
+];
+
 function App() {
   return (
     <div className="App">
@@ -55,9 +67,7 @@ function App() {
 
       <Menu />
       <Main />
-      {/* <div className="ScollerBg">
-        <Scroll />
-  </div> */}
+      <Gallery images={images} />
       <Specials />
       <ContactUs />
     </div>
