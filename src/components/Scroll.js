@@ -33,10 +33,14 @@ export function Scroll() {
     setActiveIndex(newIndex);
   }
   return (
-    <>
-      <div></div>
-      <div></div>
-      <Heading title="Menu" description="Check Out Tasty Menu" />
+    <div id="Events">
+      <div className="MainBox">
+        <Heading
+          title="EVENTS"
+          description="Organize Your Events in our Restaurant"
+        />
+      </div>
+
       <div>
         <div className="eventHeader"></div>
         <div className="App">
@@ -77,6 +81,6 @@ export function Scroll() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

@@ -5,7 +5,7 @@ import "./components.css";
 
 export function Menu() {
   return (
-    <div className="MainBox">
+    <div className="MainBox" id="Menu">
       <Heading title="Menu" description="Check Out Tasty Menu" />
       <Types types={["All", "Starters", "salads", "specality"]} />
       <Underline />

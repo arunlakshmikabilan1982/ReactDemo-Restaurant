@@ -5,7 +5,7 @@ import "./components.css";
 
 function Specials() {
   return (
-    <div className="MainBox">
+    <div className="MainBox" id="Specials">
       <Heading title="SPECAILS" description="Check Out Tasty Menu" />
       <SpecialsMain />
       <Underline />
