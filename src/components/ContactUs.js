@@ -6,7 +6,7 @@ import "./components.css";
 
 export function ContactUs() {
   return (
-    <div className="MainBox">
+    <div className="MainBox" id="Contact">
       <Heading title="contact" description="Contact Us" />
       <div className="ContactUs">
         <ContactInfo />

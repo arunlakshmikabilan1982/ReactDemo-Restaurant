@@ -8,44 +8,55 @@ import Specials from "./components/Specials";
 import NavBar from "./components/NavBar";
 import { Whyus } from "./components/Whyus";
 import Gallery from "./components/Gallery";
+import { About } from "./components/About";
+import { BrowserRouter } from "react-router-dom";
 
 const NavBarItems = [
   {
     name: "Home",
     href: "https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select",
+    to: "#Home",
   },
   {
-    name: "Gallery",
+    name: "About",
     href: "https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select",
+    to: "#About",
   },
   {
-    name: "Home",
+    name: "Menu",
     href: "https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select",
+    to: "#Menu",
   },
   {
-    name: "Chefs",
+    name: "Specials",
     href: "https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select",
-  },
-  {
-    name: "Orders",
-    href: "https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select",
+    to: "#Specials",
   },
 
   {
     name: "Events",
     href: "https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select",
+    to: "#Events",
   },
   {
-    name: "Specials",
+    name: "Chefs",
     href: "https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select",
+    to: "#Chefs",
   },
   {
-    name: "Menu",
+    name: "Gallery",
     href: "https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select",
+    to: "#Gallery",
   },
   {
-    name: "about",
+    name: "Whyus",
     href: "https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select",
+    to: "#Whyus",
+  },
+  {
+    name: "Contact",
+    href: "https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select",
+    to: "#Contact",
   },
 ];
 
@@ -63,13 +74,16 @@ const images = [
 function App() {
   return (
     <div className="App">
-      <NavBar title="Resturant" items={NavBarItems} />
-
-      <Menu />
-      <Main />
-      <Gallery images={images} />
-      <Specials />
-      <ContactUs />
+      <BrowserRouter>
+        <NavBar title="Resturant" items={NavBarItems} />
+        <About />
+        <Main />
+        <Menu />
+        <Specials />
+        <Scroll />
+        <Gallery images={images} />
+        <ContactUs />
+      </BrowserRouter>
     </div>
   );
 }

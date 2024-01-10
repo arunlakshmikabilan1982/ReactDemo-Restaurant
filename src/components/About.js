@@ -1,3 +1,6 @@
+import { Heading } from "./Heading";
+import { Underline } from "./Underline";
+
 export function About() {
   const about = [
     {
@@ -15,33 +18,38 @@ export function About() {
     },
   ];
   return (
-    <div class="about">
-      {about.map((about) => (
-        <div class="aboutRow">
-          <div class="aboutContent">
-            <h3>{about.heading} </h3>
-            <p>{about.content1} </p>
-            <ul>
-              <li>
-                <span class="material-symbols-outlined">check_circle</span>
-                <i></i> {about.list1}
-              </li>
-              <li>
-                <span class="material-symbols-outlined">check_circle</span>
-                <i></i> {about.list2}
-              </li>
-              <li>
-                <span class="material-symbols-outlined">check_circle</span>
-                <i></i> {about.list2}
-              </li>
-            </ul>
-            <p>{about.content2} </p>
+    <div>
+      <div class="about" id="About">
+        {about.map((about) => (
+          <div class="aboutRow">
+            <div class="aboutContent">
+              <h3>{about.heading} </h3>
+              <p>{about.content1} </p>
+              <ul>
+                <li>
+                  <span class="material-symbols-outlined">check_circle</span>
+                  <i></i> {about.list1}
+                </li>
+                <li>
+                  <span class="material-symbols-outlined">check_circle</span>
+                  <i></i> {about.list2}
+                </li>
+                <li>
+                  <span class="material-symbols-outlined">check_circle</span>
+                  <i></i> {about.list2}
+                </li>
+              </ul>
+              <p>{about.content2} </p>
+            </div>
+            <div class="about-img">
+              <img src={about.imageURL} alt="" />
+            </div>
           </div>
-          <div class="about-img">
-            <img src={about.imageURL} alt="" />
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
+      <div className="MainBox">
+        <Underline />
+      </div>
     </div>
   );
 }
