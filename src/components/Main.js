@@ -1,7 +1,6 @@
 import { Heading } from "./Heading";
 import { Underline } from "./Underline";
 import { Whyus } from "./Whyus";
-import { About } from "./About";
 
 import "./components.css";
 

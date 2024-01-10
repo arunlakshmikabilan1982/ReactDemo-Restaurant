@@ -1,4 +1,3 @@
-import { Heading } from "./Heading";
 import { Underline } from "./Underline";
 
 export function About() {

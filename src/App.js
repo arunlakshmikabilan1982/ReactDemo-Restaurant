@@ -6,10 +6,11 @@ import { Scroll } from "./components/Scroll";
 import { ContactUs } from "./components/ContactUs";
 import Specials from "./components/Specials";
 import NavBar from "./components/NavBar";
-import { Whyus } from "./components/Whyus";
 import Gallery from "./components/Gallery";
 import { About } from "./components/About";
 import { BrowserRouter } from "react-router-dom";
+import { Hero } from "./components/Hero";
+import { Booking } from "./components/Booking";
 
 const NavBarItems = [
   {
@@ -76,11 +77,13 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <NavBar title="Resturant" items={NavBarItems} />
+        <Hero items={NavBarItems} />
         <About />
         <Main />
         <Menu />
         <Specials />
-        <Scroll />
+        <Scroll />\
+        <Booking />
         <Gallery images={images} />
         <ContactUs />
       </BrowserRouter>
