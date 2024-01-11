@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Carousel } from "./Carousel";
-import "./components.css";
 import { Heading } from "./Heading";
 
 export function Scroll() {
@@ -33,51 +32,47 @@ export function Scroll() {
     setActiveIndex(newIndex);
   }
   return (
-    <div id="Events">
-      <div className="MainBox">
+    <div className="scroll-bg-img" id="Events">
+      <div className="eventHeader">
+        {" "}
         <Heading
           title="EVENTS"
           description="Organize Your Events in our Restaurant"
         />
       </div>
 
-      <div>
-        <div className="eventHeader"></div>
-        <div className="App">
-          <div className="carousel">
-            <div
-              className="inner"
-              style={{ transform: `translate(-${activeIndex * 100}%)` }}
-            >
-              {items.map((item) => {
-                return <Carousel item={item} width={"100%"} />;
-              })}
-            </div>
+      <div className="carousel">
+        <div
+          className="inner"
+          style={{ transform: `translate(-${activeIndex * 100}%)` }}
+        >
+          {items.map((item) => {
+            return <Carousel item={item} width={"100%"} />;
+          })}
+        </div>
 
-            <div className="carousel-buttons">
-              <div className="indicators">
-                {items.map((item, index) => {
-                  return (
-                    <button
-                      className="indicator-buttons"
-                      onClick={() => {
-                        app(index);
-                      }}
-                    >
-                      <span
-                        className={`material-symbols-outlined ${
-                          index === activeIndex
-                            ? "indicator-symbol-active"
-                            : "indicator-symbol"
-                        }`}
-                      >
-                        O
-                      </span>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
+        <div className="carousel-buttons">
+          <div className="indicators">
+            {items.map((item, index) => {
+              return (
+                <button
+                  className="indicator-buttons"
+                  onClick={() => {
+                    app(index);
+                  }}
+                >
+                  <span
+                    className={`material-symbols-outlined ${
+                      index === activeIndex
+                        ? "indicator-symbol-active"
+                        : "indicator-symbol"
+                    }`}
+                  >
+                    fiber_manual_record
+                  </span>
+                </button>
+              );
+            })}
           </div>
         </div>
       </div>
