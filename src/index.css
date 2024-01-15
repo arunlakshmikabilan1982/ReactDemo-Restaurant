@@ -668,3 +668,77 @@ textarea {
 .text-center {
   padding: 10px;
 }
+
+/*------------- testimonial ---------------*/
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.TestimonialInner {
+  white-space: nowrap;
+  transition: transform 0.3s;
+}
+
+.testimonial-carousel-item {
+  display: inline-block;
+  margin-top: 150px;
+
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  height: 300px;
+  width: 350px;
+  padding: 30px;
+  background-color: #1f1e1e67;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(5, 5, 5, 0.8);
+}
+.testimonial-carousel-item2 {
+  display: block;
+  font-size: 1.15rem;
+  padding: 50px;
+  white-space: normal;
+  align-items: start;
+  justify-content: left;
+  color: white;
+}
+.testimonial-carousel-item1 {
+  display: block;
+  font-size: 1.15rem;
+  margin: 10px 0 10px 0;
+  white-space: normal;
+  color: white;
+}
+.testimonial-carousel-img {
+  width: 150px;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: gray;
+  justify-content: left;
+}
+.testimonialSwiper {
+  margin: 0px 200px;
+  padding: 100px;
+  background-color: #131414;
+}
+.testimonialEventHeader {
+  background: #131414;
+}
