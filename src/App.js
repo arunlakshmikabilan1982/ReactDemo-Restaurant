@@ -11,6 +11,7 @@ import { About } from "./components/About";
 import { BrowserRouter } from "react-router-dom";
 import { Hero } from "./components/Hero";
 import { Booking } from "./components/Booking";
+import { Testimonial } from "./components/Testimonial";
 
 const NavBarItems = [
   {
@@ -82,8 +83,9 @@ function App() {
         <Main />
         <Menu />
         <Specials />
-        <Scroll />\
+        <Scroll />
         <Booking />
+        <Testimonial />
         <Gallery images={images} />
         <ContactUs />
       </BrowserRouter>
